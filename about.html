@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tentang Saya — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mongu.ico">
+
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <div class="about-grid">
+          <div class="about-img">
+            <img src="foto diri.jpeg" alt="Foto Diri">
+          </div>
+          <div class="about-content">
+            <h3>Biodata Singkat</h3>
+            <ul>
+              <li>Nama&nbsp;&nbsp;&nbsp;: Ahmad Malik Rasyid</li>
+              <li>Umur&nbsp;&nbsp;&nbsp;&nbsp;: 15 Tahun</li>
+              <li>Asal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Serang, Banten </li>
+              <li>Sekolah: Madrasah Aliyah Negeri Insan Cendekia Gowa</li>
+              <li>Kelas&nbsp;&nbsp;&nbsp;&nbsp;: XI D (Peminatan Teknik)</li>
+            </ul>
+
+            <h3>Minat</h3>
+            <p>Bidang Keamanan Siber dan Pengelolaan Jaringan.</p>
+
+            <h3>Tujuan Karier</h3>
+            <p>Melanjutkan studi di ITB jurusan Teknik Telekomunikasi, dan magang di perusahaaan 
+              jaringan seperti Telkomsel dan XL Axiata</p>
+
+            <p><a href="Resume_Ahmad_Malik_Rasyid.pdf" download="Resume_Ahmad_Malik_Rasyid.pdf" class="btn">Unduh CV</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-about"></span> Nama Anda. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-about').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function(){
+      if(location.hash){
+        const el = document.querySelector(location.hash);
+        if(el) setTimeout(()=> el.scrollIntoView({behavior:'smooth'}), 50);
+      }
+    });
+  </script>
+</body>
+</html>

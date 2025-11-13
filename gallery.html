@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galeri — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mongu.ico">
+
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Galeri / Gambar</h2>
+        <p>Kumpulan foto random</p>
+        <div class="gallery-grid">
+          <figure><img src="foto depan rumah.jpg" alt="Foto 1"><figcaption>Fotografer</figcaption></figure>
+          <figure><img src="malik dan kambing.jpg" alt="Foto 2"><figcaption>Fotbar sama Goat</figcaption></figure>
+          <figure><img src="jualan saat scionic.jpg" alt="Foto 3"><figcaption>Jualan saat scionic</figcaption></figure>
+          <figure><img src="suasana kemah di ic di pagi hari.jpg" alt="Foto 4"><figcaption>Suasana pagi saat scionic 2024</figcaption></figure>
+          <figure><img src="pemandangan di ic.jpg" alt="Foto 5"><figcaption>Pemandangan di ic</figcaption></figure>
+          <figure><img src="sunrise di ic.jpg" alt="Foto 6"><figcaption>Sunrise di ic</figcaption></figure>
+          <figure><img src="sapi di ic.jpg" alt="Foto 7"><figcaption>Sapi di ic</figcaption></figure>
+          <figure><img src="cosplay petani.jpg" alt="Foto 8"><figcaption>Jadi petani</figcaption></figure>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-gal"></span> Ahmad Malik Rasyid. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-gal').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function(){
+      if(location.hash){
+        const el = document.querySelector(location.hash);
+        if(el) setTimeout(()=> el.scrollIntoView({behavior:'smooth'}), 50);
+      }
+    });
+  </script>
+</body>
+</html>

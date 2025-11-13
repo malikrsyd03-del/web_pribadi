@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak & Media Sosial — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="mongu.ico">
+
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2>Kontak & Media Sosial</h2>
+        <p>Anda dapat menghubungi saya melalui:</p>
+
+        <ul class="social-list">
+          <li><a href="https://youtube.com/@ahmadmalikrasyid79" target="_blank">YouTube</a></li>
+          <li><a href="https://instagram.com/rsydmalik" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=malikrsyd@gmail.com" target="_blank">Email</a></li>
+        </ul>
+
+        <h3>Kotak Kritik dan Saran</h3>
+        <form action="https://formspree.io/f/mblqjner" method="POST" class="contact-form">
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan...(Pesan akan terkirim secara anonim)" required></textarea>
+
+          <button class="btn" type="submit">Kirim Pesan</button>
+        </form>
+
+        <p><a class="btn" href="Resume_Ahmad_Malik_Rasyid.pdf" download>Unduh CV / Resume</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-con"></span> Ahmad Malik Rasyid. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-con').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function () {
+      if (location.hash) {
+        const el = document.querySelector(location.hash);
+        if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 50);
+      }
+    });
+  </script>
+</body>
+
+</html>

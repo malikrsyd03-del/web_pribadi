@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pendidikan & Pengalaman — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mongu.ico">
+
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Riwayat Pendidikan & Pengalaman</h2>
+        <ul class="timeline">
+          <li>
+            <h3>SD — <a href="https://www.instagram.com/sd_islam_tirtayasa/" target="_blank" class="school-link">SD Islam Tirtayasa</a></h3>
+            <p>Mempelajari hal-hal dasar, bergabung di ekskul pencak silat, 2015 — 2021.</p>
+          </li>
+          <li>
+            <h3>SMP — <a href="https://www.instagram.com/mtsn1kotaserang/" target="_blank" class="school-link">MTsN 1 Kota Serang</a></h3>
+            <p>Sudah mulai mengenali bakat dan potensi yang dimiliki, aktif dalam ekstrakurikuler marawis, 2021 — 2024.</p>
+          </li>
+          <li>
+            <h3>SMA — <a href="https://www.instagram.com/man_ic_gowa/" target="_blank" class="school-link">MAN Insan Cendekia Gowa</a></h3>
+            <p>Bergabung di peminatan olimpiade informatika, aktif kegiatan Organisasi Siswa Intra Madrasah (OSIM), aktif dalam ekstrakurikuler Palang Merah Remaja dan Pencak Silat, 2024 — Sekarang.</p>
+          </li>
+          <li>
+            <h3>Organisasi / Kegiatan</h3>
+            <p><b>Organisasi :</b></p>
+            <p>- Pengurus Organisasi Siswa Intra Madrasah (OSIM) Divisi Kesehatan & Lingkungan Periode 2024/2025.</p>
+            <p>- Pengurus Organisasi Siswa Intra Madrasah (OSIM) Divisi Ketertiban & Kebersihan Lingkungan Periode 2025/2026.</p>
+            <p><b>Kegiatan :</b></p>
+            <p>- Panitia Kemah Sains Moderasi (SCIONIC) Vol. 1, Divisi Konsumsi (2024).</p>
+            <p>- Panitia Kemah Sains Moderasi (SCIONIC) Vol. 2, Divisi Konsumsi (2025).</p>
+            <p>- Panitia Penyambutan Pelajar Australia Dari Sekolah Saint John Grammar School, Adelaide (2025).</p>
+          </li>
+          <li>
+            <h3>Pelatihan / Kursus</h3>
+            <p>- Pelatihan Persiapan Olimpiade Informatika oleh Olimpiade Bersama (OBER) (2025)</p>
+            <p>- Webinar Pengenalan Halal dan Proses Sertifikasi Halal oleh LPPOM MUI (2025)</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-edu"></span> Ahmad Malik Rasyid. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-edu').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function(){
+      if(location.hash){
+        const el = document.querySelector(location.hash);
+        if(el) setTimeout(()=> el.scrollIntoView({behavior:'smooth'}), 50);
+      }
+    });
+  </script>
+</body>
+</html>
+

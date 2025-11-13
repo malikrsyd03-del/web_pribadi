@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galeri — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mongu.ico">
+
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Foto Kucingnya Malik</h2>
+        <p>Namanya Mong, dia kucing lucu yang penurut, sayangnya udah meninggal akhir tahun 2024 yang lalu :(, kalau yang abu-abu itu suaminya Mong (Kucing tetangga, saya kurang tau namanya 😅)</p>
+        <div class="gallery-grid">
+          <figure><img src="mong 1.jpg" alt="Foto 1"></figure>
+          <figure><img src="mong 2.jpg" alt="Foto 2"></figure>
+          <figure><img src="mong 3.jpg" alt="Foto 3"></figure>
+          <figure><img src="mong 4.jpg" alt="Foto 4"></figure>
+          <figure><img src="mong 5.jpg" alt="Foto 5"></figure>
+          <figure><img src="mong 6.jpg" alt="Foto 6"></figure>
+          <figure><img src="mong 7.jpg" alt="Foto 7"></figure>
+          <figure><img src="mong 8.jpg" alt="Foto 8"></figure>
+          <figure><img src="mong 9.jpg" alt="Foto 9"></figure>
+          <figure><img src="mong 10.jpg" alt="Foto 10"></figure>
+          <figure><img src="mong 11.jpg" alt="Foto 11"></figure>
+          <figure><img src="mong 12.jpg" alt="Foto 12"></figure>
+          <figure><img src="mong 13.jpg" alt="Foto 13"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-gal"></span> Ahmad Malik Rasyid. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-gal').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function(){
+      if(location.hash){
+        const el = document.querySelector(location.hash);
+        if(el) setTimeout(()=> el.scrollIntoView({behavior:'smooth'}), 50);
+      }
+    });
+  </script>
+</body>
+</html>

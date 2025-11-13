@@ -1,0 +1,104 @@
+<!--
+Project: Website 6 Halaman (HTML + CSS)
+Files included below. Ganti /upload/replace file:
+- images/image.jpg (gambar placeholder)
+- resume.pdf (file CV yang bisa diunduh)
+
+Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), letakkan semua file pada folder proyek, buka index.html di browser.
+-->
+
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beranda — Ahmad Malik Rasyid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="mongu.ico">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Malik Rsyd</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#home">Beranda</a></li>
+          <li><a href="about.html#about">Tentang</a></li>
+          <li><a href="education.html#education">Pendidikan</a></li>
+          <li><a href="projects.html#projects">Proyek</a></li>
+          <li><a href="gallery.html#gallery">Galeri</a></li>
+          <li><a href="foto kucing.html">Foto Kucing</a></li>
+          <li><a href="contact.html#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-image">
+          <img src="foto diri.jpeg" alt="Foto Diri">
+        </div>
+        <div class="hero-text">
+          <h2>Halo — Saya Ahmad Malik Rasyid</h2>
+          <p>Halo! Saya pelajar asal Serang, Banten, dan sekarang sekolah di MAN Insan Cendekia Gowa. 
+            Saya tertarik banget sama dunia siber dan jaringan, dan bercita-cita bisa kuliah di ITB, 
+            tepatnya di jurusan Teknik Telekomunikasi. Saya sangat menyukai kucing, apalagi yang lucu.
+          </p>
+          <p><a class="btn" href="Resume_Ahmad_Malik_Rasyid.pdf" download>Unduh CV / Resume</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <h3>Minat</h3>
+            <p>Saya memiliki minat di bidang keamanan siber dan jaringan komputer.
+            Saya tertarik mempelajari cara kerja sistem keamanan digital dan bagaimana 
+            melindungi data dari ancaman siber.</p>
+          </article>
+          <article class="card">
+            <h3>Tujuan Karier</h3>
+            <p>Saya memiliki visi untuk menjadi profesional di bidang keamanan siber dan jaringan. 
+            Saat ini saya menargetkan untuk melanjutkan studi di ITB (STEI-R) jurusan Teknik Telekomunikasi dan 
+            mengembangkan pengalaman praktis melalui magang di perusahaan besar seperti Telkomsel.</p>
+          </article>
+          <article class="card">
+            <h3>Kontak Singkat</h3>
+            <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malikrsyd@gmail.com" target="_blank">malikrsyd03@gmail.com</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ahmad Malik Rasyid. Semua hak cipta.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Tampilkan tahun sekarang
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll on page load if there's a hash (handles cross-page anchors)
+    document.addEventListener('DOMContentLoaded', function(){
+      if(location.hash){
+        const el = document.querySelector(location.hash);
+        if(el) setTimeout(()=> el.scrollIntoView({behavior:'smooth'}), 50);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
