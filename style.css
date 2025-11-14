@@ -44,45 +44,28 @@ body {
   font-size: 1.25rem
 }
 
-nav {
-  background: transparent;
-  padding: 1rem 0;
-  box-shadow: none;
-}
-
 .nav-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  display: flex;
+  gap: 0.5rem
 }
 
 .nav-list li a {
+  display: inline-block;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+  color: var(--text);
   text-decoration: none;
-  color: #1f2937;
-  font-weight: 500;
-  padding: .4rem .6rem;
-  border-radius: 6px;
-  transition: 0.2s ease;
+  transition: all .2s ease
 }
 
 .nav-list li a:hover {
-  background: rgba(255, 255, 255, 0.15); /* warna lembut */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(47, 143, 122, 0.08)
 }
-
-.nav-list li a.active {
-  color: #dcdcdc;
-  font-weight: 600;
-}
-
-.nav-list li a:focus, 
-.btn:focus { 
-  box-shadow: 0 0 0 3px rgba(47, 143, 122, 0.14) }
-
 .hero {
   padding: 2rem 0
 }
@@ -327,6 +310,7 @@ a {
 .school-link:hover {
   color: #0056ff;
 }
+
 
 
 
