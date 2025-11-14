@@ -23,6 +23,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+nav {
+  background: transparent;
+  padding: 10px 0;
+  box-shadow: none;
+}
 
 .container {
   max-width: var(--max-width);
@@ -319,6 +324,7 @@ a {
   color: #dcdcdc;
   font-weight: 600;
 }
+
 
 
 
