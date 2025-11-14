@@ -311,11 +311,10 @@ a {
 
 .nav-list a {
   text-decoration: none;
-  color: #ffffff; /* warna default link */
-  transition: color .2s ease;
+  color: #ffffff;
 }
 
 .nav-list a.active {
-  color: #dcdcdc; /* putih lebih gelap */
+  color: #dcdcdc;
   font-weight: 600;
 }
