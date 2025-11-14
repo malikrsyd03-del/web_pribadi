@@ -32,8 +32,6 @@ nav {
   z-index: 1000;
 }
 
-
-
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -329,4 +327,5 @@ a {
   color: #dcdcdc;
   font-weight: 600;
 }
+
 
