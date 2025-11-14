@@ -70,8 +70,8 @@ nav {
 
 .nav-list li a:hover {
   background: rgba(255, 255, 255, 0.15); /* warna lembut */
-  transform: scale(1.05);               /* efek ngembang dikit */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 .nav-list li a.active {
@@ -321,6 +321,7 @@ a {
 .school-link:hover {
   color: #0056ff;
 }
+
 
 
 
