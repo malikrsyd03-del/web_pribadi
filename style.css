@@ -23,18 +23,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(10px);
-}
-
-
-html, body, header, main, .container, .wrapper {
-  overflow: visible ;
-}
 
 .container {
   max-width: var(--max-width);
@@ -331,6 +319,7 @@ a {
   color: #dcdcdc;
   font-weight: 600;
 }
+
 
 
 
