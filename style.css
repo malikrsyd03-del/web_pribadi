@@ -66,6 +66,12 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(47, 143, 122, 0.08)
 }
+
+.nav-list li a.active {
+  color: #f4f4f4;
+  font-weight: 600;
+}
+
 .hero {
   padding: 2rem 0
 }
