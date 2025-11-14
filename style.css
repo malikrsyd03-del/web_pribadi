@@ -309,25 +309,13 @@ a {
   color: #0056ff;
 }
 
-/* gaya untuk link aktif di navbar */
-.nav-list li a.active {
-  color: var(--primary);                /* warna teks link aktif */
-  font-weight: 700;                     /* lebih tegas */
-  background: rgba(47,143,122,0.08);    /* latar lembut */
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(47,143,122,0.08);
-  transform: translateY(-2px);
-  transition: all .18s ease;
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff; /* warna default link */
+  transition: color .2s ease;
 }
 
-/* kalau mau garis bawah mirip tab chrome (opsional) */
-.nav-list li a.active::after {
-  content: "";
-  display: block;
-  margin: 6px auto 0;
-  height: 3px;
-  width: 60%;
-  background: var(--primary);
-  border-radius: 4px;
+.nav-list a.active {
+  color: #dcdcdc; /* putih lebih gelap */
+  font-weight: 600;
 }
-
