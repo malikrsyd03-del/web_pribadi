@@ -97,6 +97,59 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
       }
     });
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const links = Array.from(document.querySelectorAll('nav a'));
+  const currentPath = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const currentHash = (location.hash || '').toLowerCase();
+
+  function normalize(name) {
+    return (name || '').toLowerCase();
+  }
+
+  function updateActive() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    const hash = (location.hash || '').toLowerCase();
+
+    links.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      // Resolve relative href to full URL to easily extract pathname & hash
+      const url = new URL(href, location.href);
+      const linkPath = (url.pathname.split('/').pop() || 'index.html').toLowerCase();
+      const linkHash = (url.hash || '').toLowerCase();
+
+      // Conditions for active:
+      // 1) same page file (about.html === about.html) AND either no hash mismatch or same hash
+      // 2) OR link is an anchor that matches current hash
+      // 3) handle root/index cases
+      const samePage = (linkPath === path);
+      const hashMatch = linkHash && (linkHash === hash);
+      const noHashOnLink = !linkHash;
+      const onlyHashLink = href.startsWith('#');
+
+      if ((samePage && (noHashOnLink || hashMatch)) || hashMatch || (onlyHashLink && hashMatch)) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // initial set
+  updateActive();
+
+  // update when hash changes (clicking anchor or browser back/forward)
+  window.addEventListener('hashchange', updateActive);
+
+  // also update on navigation via clicks so active toggles immediately (useful for same-page anchors)
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      // small timeout to allow navigation change (if it navigates to another page this script on new page will run)
+      setTimeout(updateActive, 50);
+    });
+  });
+});
+</script>
 </body>
 </html>
 
