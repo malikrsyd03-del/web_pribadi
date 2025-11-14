@@ -46,27 +46,22 @@ body {
 
 nav {
   background: transparent;
+  padding: 1rem 0;
   box-shadow: none;
-  padding: 10px 0;
 }
 
 .nav-list {
   display: flex;
-  gap: 2rem;
   justify-content: center;
-  padding: 1rem 0;
+  gap: 2rem;
   margin: 0;
-  list-style: none;
-}
-
-.nav-list,
-.nav-list li {
+  padding: 0;
   list-style: none;
 }
 
 .nav-list li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
   padding: .4rem .6rem;
   border-radius: 6px;
@@ -76,23 +71,17 @@ nav {
 .nav-list li a:hover {
   background: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(47, 143, 122, 0.08)
+  box-shadow: 0 6px 18px rgba(47, 143, 122, 0.08);
 }
 
-.nav-list li a:focus,
-.btn:focus {
-  box-shadow: 0 0 0 3px rgba(47, 143, 122, 0.14)
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav-list a.active {
+.nav-list li a.active {
   color: #dcdcdc;
   font-weight: 600;
 }
+
+.nav-list li a:focus, 
+.btn:focus { 
+  box-shadow: 0 0 0 3px rgba(47, 143, 122, 0.14) }
 
 .hero {
   padding: 2rem 0
@@ -332,6 +321,7 @@ a {
 .school-link:hover {
   color: #0056ff;
 }
+
 
 
 
