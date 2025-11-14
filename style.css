@@ -319,6 +319,47 @@ a {
 }
 
 
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Card styling */
+.info-card {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.info-card h2 {
+  margin-top: 0;
+  margin-bottom: .7rem;
+  color: #1e293b;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.info-card p,
+.info-card li {
+  color: #374151;
+  line-height: 1.55;
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+}
+
 
 
 
