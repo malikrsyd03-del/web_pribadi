@@ -62,7 +62,7 @@ body {
 }
 
 .nav-list li a.active {
-  color: #555;
+  color: #dcdcdc;
   font-weight: 600;
 }
 
@@ -317,6 +317,7 @@ a {
 .school-link:hover {
   color: #0056ff;
 }
+
 
 
 
