@@ -57,12 +57,11 @@ nav {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: black;
 }
 
 .nav-list li a {
   text-decoration: none;
-  color: #fff;
+  color: #1f2937;
   font-weight: 500;
   padding: .4rem .6rem;
   border-radius: 6px;
@@ -327,6 +326,7 @@ a {
 .school-link:hover {
   color: #0056ff;
 }
+
 
 
 
