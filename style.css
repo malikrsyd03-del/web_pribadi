@@ -530,6 +530,17 @@ body.dark .project-card .caption {
   color: #e5e7eb !important;
 }
 
+* {
+  transition: background-color .35s ease, 
+              color .35s ease, 
+              box-shadow .35s ease,
+              border-color .35s ease;
+}
+
+*:hover {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
 
 
 
