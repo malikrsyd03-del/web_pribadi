@@ -379,6 +379,30 @@ a {
   transform: scale(1.05);
 }
 
+.timeline li {
+  display: flex;
+  justify-content: space-between; /* teks kiri, foto kanan */
+  align-items: flex-start; /* sejajarkan ke atas */
+  position: relative;
+  gap: 20px; /* jarak antara teks dan foto */
+}
+
+.timeline li .edu-photo {
+  width: 200px;           /* kamu bisa ubah */
+  height: 100%;           /* supaya ikut tinggi container */
+  max-height: 180px;      /* biar nggak terlalu besar */
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.timeline li .edu-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 
 
