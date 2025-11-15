@@ -90,7 +90,9 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
   <span class="close-popup">&times;</span>
   <img id="popup-img" src="">
 </div>
-  
+
+  <button id="darkToggle" class="dark-floating">🌙</button>
+
   <script>
     // Tampilkan tahun sekarang
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -121,6 +123,24 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
 
   popup.addEventListener("click", (e) => {
     if (e.target === popup) popup.style.display = "none";
+  });
+</script>
+
+  <script>
+  // Ambil tombol
+  const toggle = document.getElementById('darkToggle');
+
+  // Saat tombol diklik
+  toggle.addEventListener('click', () => {
+    // Tambah/hapus kelas "dark" di body
+    document.body.classList.toggle('dark');
+
+    // Ganti icon tombol
+    if (document.body.classList.contains('dark')) {
+      toggle.textContent = "☀️";  // mode terang
+    } else {
+      toggle.textContent = "🌙";  // mode gelap
+    }
   });
 </script>
 
