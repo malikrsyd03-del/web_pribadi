@@ -106,7 +106,9 @@
   <span class="close-popup">&times;</span>
   <img id="popup-img" src="">
 </div>
-  
+
+  <button id="darkToggle" class="dark-floating">🌙</button>
+
   <script>
     document.getElementById('year-proj').textContent = new Date().getFullYear();
     document.addEventListener('DOMContentLoaded', function () {
@@ -137,10 +139,29 @@
   });
 </script>
 
+  <script>
+  // Ambil tombol
+  const toggle = document.getElementById('darkToggle');
+
+  // Saat tombol diklik
+  toggle.addEventListener('click', () => {
+    // Tambah/hapus kelas "dark" di body
+    document.body.classList.toggle('dark');
+
+    // Ganti icon tombol
+    if (document.body.classList.contains('dark')) {
+      toggle.textContent = "☀️";  // mode terang
+    } else {
+      toggle.textContent = "🌙";  // mode gelap
+    }
+  });
+</script>
+
 </body>
 
 
 </html>
+
 
 
 
