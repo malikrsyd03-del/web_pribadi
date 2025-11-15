@@ -18,6 +18,7 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="mongu.ico">
 </head>
 <body>
@@ -85,6 +86,11 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
     </div>
   </footer>
 
+  <div id="img-popup" class="img-popup">
+  <span class="close-popup">&times;</span>
+  <img id="popup-img" src="">
+</div>
+  
   <script>
     // Tampilkan tahun sekarang
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -97,6 +103,26 @@ Cara pakai: simpan setiap bagian sebagai file terpisah (nama file tercantum), le
       }
     });
   </script>
+
+  <script>
+  const popup = document.getElementById("img-popup");
+  const popupImg = document.getElementById("popup-img");
+
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => {
+      popup.style.display = "flex";
+      popupImg.src = img.src;
+    });
+  });
+
+  document.querySelector(".close-popup").addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) popup.style.display = "none";
+  });
+</script>
 
 </body>
 </html>
