@@ -516,6 +516,18 @@ body.dark .dark-floating {
   box-shadow: 0 6px 20px rgba(0,0,0,0.45);
 }
 
+body.dark .project-card {
+  background: #1a2228 !important;
+}
+
+body.dark .project-card p,
+body.dark .project-card .title,
+body.dark .project-card .caption {
+  background: #1a2228 !important;
+  color: #e5e7eb !important;
+}
+
+
 
 
 
