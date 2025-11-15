@@ -393,6 +393,83 @@ a {
 .timeline li.with-photo p {
   flex: 1;
 
+  /* ——————————————————————
+   DARK MODE — TARUH PALING BAWAH
+   —————————————————————— */
+
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Semua teks */
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark li,
+body.dark span,
+body.dark a {
+  color: #f5f5f5;
+}
+
+/* Navbar / header */
+body.dark header,
+body.dark nav {
+  background-color: #1a1a1a ;
+  border-color: #333 ;
+}
+
+/* Container atau card (penyesuaian global) */
+body.dark .card,
+body.dark .box,
+body.dark .container,
+body.dark .content,
+body.dark .section,
+body.dark .education-item,
+body.dark .project-item,
+body.dark .gallery-item,
+body.dark .footer {
+  background-color: #1c1c1c ;
+  color: #f5f5f5 ;
+  border-color: #333 ;
+}
+
+/* Hover link */
+body.dark a:hover {
+  color: #87cefa ;
+}
+
+/* Image slightly dim */
+body.dark img {
+  filter: brightness(0.85);
+}
+
+/* Table support */
+body.dark table {
+  background-color: #1c1c1c ;
+  color: #f5f5f5 ;
+  border-color: #333 ;
+}
+
+body.dark th,
+body.dark td {
+  border-color: #444 ;
+}
+
+/* Form input */
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #2a2a2a ;
+  color: #fff ;
+  border-color: #444 ;
+}
+
+
 
 
 
