@@ -392,7 +392,7 @@ a {
 .timeline li.with-photo h3,
 .timeline li.with-photo p {
   flex: 1;
-
+}
   /* ——————————————————————
    DARK MODE — TARUH PALING BAWAH
    —————————————————————— */
@@ -487,6 +487,7 @@ body.dark select {
 .dark-floating:hover {
   transform: scale(1.2);
 }
+
 
 
 
