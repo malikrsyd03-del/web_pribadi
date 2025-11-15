@@ -393,100 +393,130 @@ a {
 .timeline li.with-photo p {
   flex: 1;
 }
-  /* ——————————————————————
-   DARK MODE — TARUH PALING BAWAH
-   —————————————————————— */
+/* =========================================================
+   DARK MODE — Aktif ketika <body class="dark">
+   ========================================================= */
 
 body.dark {
-  background-color: #121212;
-  color: #f5f5f5;
+  background: #0e1418;
+  color: #e5e7eb;
 }
 
-/* Semua teks */
-body.dark p,
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark h5,
-body.dark h6,
-body.dark li,
-body.dark span,
-body.dark a {
-  color: #f5f5f5;
+/* Global text colors */
+body.dark * {
+  color: inherit;
 }
 
-/* Navbar / header */
-body.dark header,
-body.dark nav {
-  background-color: #1a1a1a ;
-  border-color: #333 ;
+/* Navbar */
+body.dark .brand a {
+  color: #6ee7c8;
 }
 
-/* Container atau card (penyesuaian global) */
+body.dark .nav-list li a {
+  color: #e5e7eb;
+}
+
+body.dark .nav-list li a:hover {
+  background: rgba(110, 231, 183, 0.08);
+  box-shadow: 0 6px 18px rgba(110, 231, 183, 0.12);
+}
+
+/* Active nav */
+body.dark .nav-list li a.active {
+  color: #9ca3af;
+}
+
+/* Cards (fitur, about, project, timeline) */
 body.dark .card,
-body.dark .box,
-body.dark .container,
-body.dark .content,
-body.dark .section,
-body.dark .education-item,
-body.dark .project-item,
-body.dark .gallery-item,
-body.dark .footer {
-  background-color: #1c1c1c ;
-  color: #f5f5f5 ;
-  border-color: #333 ;
+body.dark .info-card,
+body.dark .timeline li,
+body.dark .project-card,
+body.dark .gallery-grid figure {
+  background: #1a2228;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* Hover link */
-body.dark a:hover {
-  color: #87cefa ;
+body.dark .card:hover,
+body.dark .info-card:hover,
+body.dark .timeline li:hover,
+body.dark .project-card:hover,
+body.dark .gallery-grid figure:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.55);
 }
 
-/* Image slightly dim */
-body.dark img {
-  filter: brightness(0.85);
+/* Hero image shadow */
+body.dark .hero-image img {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-/* Table support */
-body.dark table {
-  background-color: #1c1c1c ;
-  color: #f5f5f5 ;
-  border-color: #333 ;
+/* Project images */
+body.dark .project-card img {
+  opacity: 0.95;
 }
 
-body.dark th,
-body.dark td {
-  border-color: #444 ;
+/* Timeline dengan foto */
+body.dark .edu-photo {
+  background: #1a2228;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
 }
 
-/* Form input */
-body.dark input,
-body.dark textarea,
-body.dark select {
-  background-color: #2a2a2a ;
-  color: #fff ;
-  border-color: #444 ;
+/* Inputs */
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background: #1a2022;
+  color: #e5e7eb;
+  border: 1px solid #334048;
 }
 
-  .dark-floating {
+/* Footer */
+body.dark footer {
+  border-top: 1px solid #1f2b30;
+}
+
+/* Social icons */
+body.dark .social-list li a {
+  background: rgba(110, 231, 183, 0.1);
+}
+
+/* School link */
+body.dark .school-link {
+  color: #8fbaff;
+}
+
+body.dark .school-link:hover {
+  color: #a5ccff;
+}
+
+/* Dark mode toggle floating button */
+.dark-floating {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #ffffffcc;
-  backdrop-filter: blur(4px);
+  background: var(--primary);
+  color: white;
   border: none;
-  font-size: 22px;
-  padding: 10px 12px;
+  padding: .7rem .9rem;
   border-radius: 50%;
+  font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 999;
 }
 
 .dark-floating:hover {
-  transform: scale(1.2);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
 }
+
+/* Dark mode button when DARK */
+body.dark .dark-floating {
+  background: #1f2b30;
+  color: #6ee7c8;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+
+
 
 
 
