@@ -492,7 +492,7 @@ body.dark .school-link:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--primary);
+  background: #ffffff;
   color: white;
   border: none;
   padding: .7rem .9rem;
@@ -515,6 +515,7 @@ body.dark .dark-floating {
   color: #6ee7c8;
   box-shadow: 0 6px 20px rgba(0,0,0,0.45);
 }
+
 
 
 
