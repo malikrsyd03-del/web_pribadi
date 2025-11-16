@@ -553,9 +553,10 @@ figure figcaption {
 }
 
 body.dark figure figcaption {
-  background-color: #1e1e1e;  /* samakan dengan warna background dark mode */
+  background-color: #1a2228;  /* samakan dengan warna background dark mode */
   color: #f0f0f0;
 }
+
 
 
 
