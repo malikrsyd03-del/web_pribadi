@@ -153,6 +153,8 @@ body {
 .about-img img {
   width: 100%;
   border-radius: 10px
+  box-shadow: 0 8px 24px rgba(47, 143, 122, 0.08);
+  transition: transform .35s ease
 }
 .about-img img:hover {
   transform: scale(1.02)
@@ -540,6 +542,7 @@ body.dark .project-card .caption {
 *:hover {
   transition: transform .2s ease, box-shadow .2s ease;
 }
+
 
 
 
